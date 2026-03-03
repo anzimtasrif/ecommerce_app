@@ -20,4 +20,10 @@ class AppWidget{
         fontSize: 15.0,
         fontWeight: FontWeight.w500);
   }
+  static TextStyle semiBoldTextFieldstyle(){
+    return TextStyle(
+        color: Colors.black38,
+        fontSize: 18.0,
+        fontWeight: FontWeight.w500);
+  }
 }

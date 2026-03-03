@@ -43,6 +43,64 @@ class _HomeState extends State<Home> {
                 style: AppWidget.LightTextFieldstyle()),
             const SizedBox(height: 20.0),
             showIteam(),
+            SizedBox(
+              height: 30.0,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                Container(
+                  margin: EdgeInsets.all(4),
+                  child: Material(
+                    elevation: 5.0,
+                    borderRadius: BorderRadius.circular(20),
+                    child: Container(
+                      padding: const EdgeInsets.all(14),
+
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                        Image.asset("images/salad2.png",height: 150, width: 150, fit: BoxFit.cover,),
+                        Text("Mix Veg salad",
+                            style: AppWidget.boldTextFieldstyle()),
+                            SizedBox(height: 5.0),
+                        Text("Fresh and Healthy",
+                            style: AppWidget.LightTextFieldstyle()),
+                          SizedBox(height: 5.0),
+                        Text("\$25", style: AppWidget.boldTextFieldstyle()),
+
+                      ],)
+                    ),
+                  ),
+                ),
+                  SizedBox(width: 10.0),
+                  Container(
+                    margin:  EdgeInsets.all(4),
+                    child: Material(
+                      elevation: 5.0,
+                      borderRadius: BorderRadius.circular(20),
+                      child: Container(
+                          padding: const EdgeInsets.all(14),
+
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image.asset("images/salad2.png",height: 150, width: 150, fit: BoxFit.cover,),
+                              Text("Veggie Taco",
+                                  style: AppWidget.boldTextFieldstyle()),
+                              SizedBox(height: 5.0),
+                              Text("spicy with onion",
+                                  style: AppWidget.LightTextFieldstyle()),
+                              SizedBox(height: 5.0),
+                              Text("\$28", style: AppWidget.boldTextFieldstyle()),
+
+                            ],)
+                      ),
+                    ),
+                  )
+              ],),
+            )
           ],
         ),
       ),
